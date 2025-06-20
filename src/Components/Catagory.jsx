@@ -3,7 +3,18 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
 import { jsx } from 'react/jsx-runtime';
 
 export default function Catagory() {
- 
+ const [catagory, setcatagory] = useState([])
+
+  const fetchCatagory = async () => {
+    const response = await fetch();
+    const data = await response.json();
+  }
+  
+  useEffect(
+    () => {
+      fetchCatagory();
+    }, []
+  )
 
    return (
 
@@ -18,6 +29,19 @@ export default function Catagory() {
         </div>
       </div>
    
+   <div className='flex'>
+        {
+          catagory.map(
+            (cat, index) => {
+              return (
+                <div>
+                  <img src="{}" alt="" />
+                </div>
+              )
+            }
+          )
+        }
+      </div>
    </div>
   )
 }
