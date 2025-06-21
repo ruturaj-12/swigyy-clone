@@ -1,17 +1,6 @@
 @import "tailwindcss";
-@plugin "daisyui";
 
 
-/* *{
-  padding: 0 0;
-
-  margin: 0 0;
-} */
-
-
-.blackoverlay{
-  background: rgba(0,0,0,0.7);
-}
 
 .navFont{
   font-size: 14px;

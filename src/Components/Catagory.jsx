@@ -3,22 +3,21 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
 import { jsx } from 'react/jsx-runtime';
 
 export default function Catagory() {
- const [catagory, setcatagory] = useState([])
+  const [catagory, setcatagory] = useState([])
 
   const fetchCatagory = async () => {
     const response = await fetch();
     const data = await response.json();
   }
-  
+
   useEffect(
     () => {
       fetchCatagory();
     }, []
   )
 
-   return (
-
-    <div className=' max-w-[1100px] mx-auto  '>
+  return (
+    <div className=' max-w-[1100px] mx-auto px-10 '>
 
       <div className='p-4 flex items-center'>
         <p className='text-xl font-bold '>What's on your mind?</p>
@@ -28,8 +27,8 @@ export default function Catagory() {
           <button className='catagoryButton'><FaArrowRight /></button>
         </div>
       </div>
-   
-   <div className='flex'>
+
+      <div className='flex'>
         {
           catagory.map(
             (cat, index) => {
@@ -41,7 +40,8 @@ export default function Catagory() {
             }
           )
         }
+        
       </div>
-   </div>
+    </div>
   )
 }
