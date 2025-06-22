@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 
+import { CgClose } from "react-icons/cg";
 
 import { MdKeyboardArrowDown } from "react-icons/md";    //logo
 import { LuSearch } from "react-icons/lu";               //logo
@@ -35,20 +36,15 @@ export default function Header() {
 
         {/* location Menu Card*/}
         <div onClick={(e) => { (e.stopPropagation()) }}
-          className=' h-[400px]   w-[300px] absolute duration-700 shadow-2xl shadow-black '
-        // style={{
-        //   left: toggle ? "100%" : "-100%"
-        // }}
-        >
+          className='p-3 h-[400px]   w-[300px] absolute  shadow-2xl shadow-black  rounded-[15px] '>
 
           {/* Location Menu Content */}
-          <div className='h-full p-2 '>
-            <span onClick={closeLocationMenu} className='text-2xl cursor-pointer '>
-              &times;
-            </span>
-            <div className='pt-10 flex items-center justify-center'>
-              <input type="text" placeholder=' Search Location' className=' outline-none border-[1.5px] rounded-[5px] ' />
-            </div>
+          {/* Close Icon */}
+          <CgClose onClick={closeLocationMenu}
+            className=' text-[18px]  hover:text-[#fc8019]' />
+          {/* Search Bar */}
+          <div className='pt-10 flex items-center justify-center'>
+            <input type="text" placeholder=' Search Location' className=' outline-none border-[1.5px] rounded-[5px] ' />
           </div>
         </div>
       </div>
@@ -67,12 +63,12 @@ export default function Header() {
             </button>
           </div>
 
-          <div class="space-x-10 text-[15px] ml-auto flex">
-            <button className='navFont '><LuSearch className='navIcon' /> Search</button>
-            <button className='navFont'><BiSolidOffer className='navIcon' /> Offers</button>
-            <button className='navFont'><TbHelpSquareRounded className='navIcon' /> Hep</button>
-            <button className='navFont'><IoLogInOutline className='navIcon' /> Sign In</button>
-            <button className='navFont'><CiShoppingCart className='navIcon' /> Cart</button>
+          <div class="space-x-10  ml-auto flex">
+            <button className='nav-Buttons'><LuSearch className='nav-Icons' /> Search</button>
+            <button className='nav-Buttons'><BiSolidOffer className='nav-Icons' /> Offers</button>
+            <button className='nav-Buttons'><TbHelpSquareRounded className='nav-Icons' /> Hep</button>
+            <button className='nav-Buttons'><IoLogInOutline className='nav-Icons' /> Sign In</button>
+            <button className='nav-Buttons'><CiShoppingCart className='nav-Icons' /> Cart</button>
           </div>
 
         </nav>

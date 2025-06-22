@@ -2,16 +2,16 @@
 
 
 
-.navFont{
+.nav-Buttons{
   font-size: 14px;
   font-weight:500;
   /* :hover:#fc8019; */
 }
-.navFont:hover{
+.nav-Buttons:hover{
   color:#fc8019;
 }
 
-.navIcon{
+.nav-Icons{
   display: inline; 
   margin-bottom: 2px;
 }
@@ -23,7 +23,6 @@
   width: 24px;
   height: 24px;
   border-radius:50%;
-  
   color: #686b78;
   cursor: pointer;
   /* flex justify-center items-center w-6 h-6 rounded-full bg-[#686b78]' */

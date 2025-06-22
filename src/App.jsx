@@ -1,5 +1,5 @@
-import Header from "./Components/Header"
-import Catagory from "./Components/Catagory"
+import Header from "./components/Header"
+import Catagory from "./components/Catagory"
 function App() {
  return (
     <>

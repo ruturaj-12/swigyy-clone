@@ -17,7 +17,7 @@ export default function Catagory() {
   )
 
   return (
-    <div className=' max-w-[1100px] mx-auto px-10 '>
+    <div id="catagory-container" className=' max-w-[1100px] mx-auto px-10 '>
 
       <div className='p-4 flex items-center'>
         <p className='text-xl font-bold '>What's on your mind?</p>
@@ -28,20 +28,7 @@ export default function Catagory() {
         </div>
       </div>
 
-      <div className='flex'>
-        {
-          catagory.map(
-            (cat, index) => {
-              return (
-                <div>
-                  <img src="{}" alt="" />
-                </div>
-              )
-            }
-          )
-        }
-        
-      </div>
+      
     </div>
   )
 }
